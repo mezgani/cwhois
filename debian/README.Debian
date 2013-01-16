@@ -1,0 +1,35 @@
+cwhois for Debian
+-----------------
+
+cwhois or  check whois is a very simple and generic whois UI client using Qt.
+It send a request to whois servers and try to give you the domain’s registration information.
+It support both of Internet protocol IPv4 and IPv6.
+
+As Whois Protocol Specification, rfc 3912, rfc 812, rfc 954
+Find here the data changed with whois ripe server as example.
+The rest of servers follow the same specification.
+
+--------------------------------------------------------------------
+! Client                                  Server at whois.ripe.net !
+--------------------------------------------------------------------
+
+open TCP        ----(SYN)--------------------------->
+                <---(SYN-ACK)------------------------
+                ----(ACK)--------------------------->
+get banner      <---"server banner <CR><LF>"---------
+send query      -----"domain <CR><LF>"-------------->
+get answer      <--------"info about domain"---------
+more info       <------"More info about domain"------
+close           <---------(FIN)----------------------
+                ----------(FIN)---------------------->
+
+
+cwhois is Free Software you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version. See the GNU General Public License for more details.
+
+For more information visit the project's web site at:
+http://cwhois.sourceforge.net/
+
+
+ -- MEZGANI Ali <mezgani@linuxmail.org>  Wed, 03 Jun 2009 02:34:16 +0200

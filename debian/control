@@ -1,0 +1,16 @@
+Source: cwhois
+Section: utils
+Priority: optional
+Maintainer: MEZGANI Ali <mezgani@linuxmail.org>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.1
+Homepage: http://cwhois.sourceforge.net/
+
+Package: cwhois
+Architecture: i386
+Depends: libqt4-core, libqt4-gui, libstdc++6, libc6 
+Description: check whois is a very simple and generic whois UI client using Qt.
+ It send a request to whois servers and try to give you the domain’s registration information.
+ It support both of Internet protocol IPv4 and IPv6.
+
+
